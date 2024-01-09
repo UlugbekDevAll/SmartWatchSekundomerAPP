@@ -9,6 +9,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccessAlarm
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Stop
@@ -104,6 +105,13 @@ private fun StopWatch(
                 Icon(
                     imageVector = Icons.Default.Stop,
                     contentDescription = null
+                )
+            }
+            Button(onClick = onReset
+            ) {
+                Icon(
+                    imageVector = Icons.Default.AccessAlarm,
+                    contentDescription=null
                 )
             }
         }
